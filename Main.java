@@ -7,8 +7,10 @@ public class Main {
     }
     // Non-working average function (needs a fix)
     public static double average(int[] nums) {
-// Placeholder: This function is incomplete and
-        currently returns 0
-        return 0;
+        int total = 0;
+        for(int i = 0; i < nums.length(); i++){
+            total += nums[i];
+        }
+        return total/nums.length();
     }
 }
